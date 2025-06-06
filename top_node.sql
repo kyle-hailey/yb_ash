@@ -1,6 +1,6 @@
 WITH params AS (
-    SELECT 43400.0::numeric AS scale_start ,
-         900.0::numeric AS scale_width
+    SELECT 43400.0::numeric AS scale_start , -- how far back in time to start
+         900.0::numeric AS scale_width       -- how wide the analysis is from the star time
 )
   SELECT
       node,
